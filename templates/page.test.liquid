@@ -1,0 +1,58 @@
+<div class="page-width">
+  <div class="page_container">
+    
+    <div>
+      <h1 class="page_title"><strong>Page Title: </strong>{{ page_title }}</h1>
+      <h2 class="topic_name"><strong>Page Handle/Slug: </strong><a href="{{ pages['test'].url }}">{{ pages['test'].url }}</a></h2>
+    </div>
+    <h2 class="topic_name">Decisions</h2>
+    {% if 5 == 5 %}
+      <p>Yes 5 == 5</p>
+    {% else %}
+      <p>Yes 5 != 5</p>
+    {% endif %}
+    <h2 class="topic_name">Loops</h2>
+    {% assign fruits = 'Black Grapes, Apples, Manoges, Oranges' | split: ', ' %}
+    {% if fruits != empty %}
+      <ul>
+        {% for fruit in fruits %}
+          <li>{{ fruit }}</li>          
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No fruits found</p>
+    {% endif %}
+
+    <h2 class="topic_name"><strong>Tag</strong> Contains</h2>
+    {% if fruits contains 'Apples' %}
+      Yes, fruits array contains the fruit 'Apples'
+    {% else %}
+      No, fruits array does not contain the fruit 'Apple'
+    {% endif %}
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

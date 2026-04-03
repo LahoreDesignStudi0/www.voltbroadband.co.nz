@@ -1,0 +1,75 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+
+<!-- CART FOOTER -->
+<div
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
+  id="main-cart-footer"
+  data-id="{{ section.id }}"
+  style="margin-bottom: 40px;">
+  <div class="page-width section-{{ section.id }}-padding">
+    {% comment %}
+    <!-- Estimated Total -->
+    {% assign original_product_price = 0 %}
+    {% assign upfront_charges = 0 %}
+    {% for item in cart.items %}
+      {% assign item_total_amount = item.selling_plan_allocation.price_adjustments.last.price | times: item.quantity %}
+      {% assign original_product_price = original_product_price | plus: item_total_amount %}
+      {% if item.product.metafields.custom.upfront_one_time_install.value == 0 %}
+        {% assign upfront_charges = upfront_charges | plus: 0 %}  
+      {% else %}
+        {% assign upfront_charges = upfront_charges | plus: 999 %}
+      {% endif %}
+      
+      {% comment %}{% assign upfront_charges = upfront_charges | plus: item.product.metafields.custom.upfront_one_time_install.value %}
+      {% assign upfront_charges = upfront_charges | plus: item.product.metafields.custom.upfront_equipment.value %}
+      {% assign upfront_charges = upfront_charges | plus: item.product.metafields.custom.pointcast_addon.value %} {% endcomment %}
+      
+    {% endfor %}
+    
+    <!-- ROW 1 - ESTIMATED TOTAL -->
+    <div class="cart_item_row cart_item_row_footer_estimated_total text_red fw_bold">
+      <h3 class="product_heading product_heading_estimated_total text_uppercase">Estimated Total</h3>
+      <h3 class="product_heading product_heading_estimated_total_price">
+        <span class="price_prefix">$</span><strong id="cart_total_price">{{ original_product_price | money_without_currency | plus: upfront_charges | floor }}</strong>
+      </h3>
+    </div>
+    <!-- /# ROW 1 -->
+
+    <!-- ROW 2 - CHECKOUT BUTTON & INSTRUCTIONS -->
+    <div class="cart_item_row cart_item_row_footer_checkout_button">
+      <hgroup class="cart_footer_checkout_instructions">
+        <p>The total price includes applicable taxes.</p>
+        <p>By proceeding to checkout, you confirm that you have read and agree to our <strong><a target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/KACIFIC_GENERAL_CONDITIONS_new.pdf?v=1740396654">General Conditions</a>, <a target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/ADDITIONAL_TERMS_FIBRE_NEW.pdf?v=1740396654" >Additional Fibre Terms</a>,</strong> and <strong><a target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/KNZ_Acceptable_Use_Policy_for_Volt_website_only_V2.pdf?v=1741609949">Acceptable Use Policy.</a></strong></p>
+        <p>We provide our Service to you on an “as is, when available basis”. Service levels are not applicable, and we have no liability to you if the applicable MIR is not met.</p>
+      </hgroup>
+      <!-- CHECKOUT BUTTON -->
+      <div class="cartpage_footer_checkout_btn_area">
+        <div class="cartpage_checkout_btn_wrap">
+          <a href="/checkout" class="cartpage_checkout_btn button">
+            {{ 'sections.cart.checkout' | t }}
+          </a>
+        </div>
+        <p class="cart_footer_note_for_next_payment">Your next month payment will be <span class="fw_bold">$</span><span class="fw_bold">{{ original_product_price | money_without_currency | floor }}</span></p>
+      </div>
+      <!-- /# CHECKOUT BUTTON -->
+    </div>
+    <!-- /# ROW 2 -->
+
+    <!-- ROW 3 - CART NOTICE -->
+    <div class="cart_notice">
+      <p class="cart_notice_text m-0"><strong>Auto-Renewal Notice:</strong> On your next billing date, your plan subscription will automatically renew, and the same amount will be charged to your card.</p>
+    </div>
+    <!-- /# ROW 3 - CART NOTICE -->
+    {% endcomment %}
+  </div>
+</div>
+<!-- /# CART FOOTER -->
+
+
+
+
+

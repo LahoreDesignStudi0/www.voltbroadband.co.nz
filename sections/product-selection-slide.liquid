@@ -1,0 +1,229 @@
+
+<style>
+  .custom-product-slider .title-wrapper-with-link {
+    display: block;
+  }
+  .custom-product-slider .title {
+    text-align: center;
+    font-weight: var(--font-heading-weight);
+    font-size: calc(var(--font-heading-scale) * 2.4rem);
+  }
+  .dawn-product-slider {
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 20px;
+    padding-bottom: 32px;
+    margin-top: 55px;
+  }
+  .dawn-product-slider img {
+      width: 100%;
+  }
+  .dawn-product-slider .carousel-cell {
+    background: #fff;
+    border-radius: 16px;
+    margin: auto;
+    padding: 18px;
+    margin: 12px;
+    width: calc(32% - 10px);
+  }
+  .product-btn {
+      width: 100%;
+  }
+  .dawn-product-slider a {
+    color: black;
+   	text-decoration: none;
+  }
+  .dawn-product-slider a .title:hover {
+   	text-decoration: underline;
+  }
+  .dawn-product-slider a .title, .dawn-product-slider a .price {
+   	margin: 0px;
+  }
+  .dawn-product-slider .flickity-button.flickity-prev-next-button.previous,
+  .dawn-product-slider .flickity-button.flickity-prev-next-button.next {
+    background: {{ section.settings.navigation_bg_color }};
+    color: black;
+  }
+  .dawn-product-slider:focus-visible, .dawn-product-slider .carousel:focus-visible {
+   	outline: unset;
+    outline-offset: unset;
+    box-shadow: unset;
+  }
+  .dawn-product-slider .custom-view-all {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background: {{ section.settings.viewall_bg_color }};
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    font-family: var(--font-heading-family);
+  }
+  .dawn-product-slider .custom-view-all a {
+    color: {{ section.settings.viewall_color }};
+  }
+  .dawn-product-slider .flickity-page-dots {
+    display: none;
+  }
+  {%- if  section.settings.viewall == false %}
+    .dawn-product-slider .custom-view-all {
+      display: none;
+    }
+  {%- endif -%}
+  @media only screen and ( max-width: 767px ) {
+    .dawn-product-slider .carousel-cell {
+      width: calc(50% - 10px);
+    }
+  }
+  @media only screen and ( max-width: 479px ) {
+    .dawn-product-slider .carousel-cell {
+      width: calc(100% - 10px);
+    }
+  }
+</style>
+<div class="collection page-width custom-product-slider">
+  <div class="title-wrapper-with-link">
+	<h2 class="title{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
+  </div>
+</div>
+<div class="dawn-product-slider">
+   <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true  }'>
+      {% for product in section.settings.collection.products limit: section.settings.products_to_show %}
+      <div class="carousel-cell">
+         {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              show_quick_add: section.settings.enable_quick_add,
+              section_id: section.id
+            %}
+      </div>
+      {% endfor %}
+   </div>
+  <div class="custom-view-all">
+    <a href="/collections/{{ section.settings.collection }}">View All</a>
+  </div>
+   <!--- Coded by keiwords.com --->
+</div>
+{% assign nav_range = section.settings.navigation_amount %}
+{% style %}
+	@media only screen and ( min-width: 1201px ) {
+		{% if nav_range == 2 %}
+        .dawn-product-slider .carousel-cell {
+            width: calc(49% - 10px);
+        }
+		{% elsif nav_range == 3 %}
+        .dawn-product-slider .carousel-cell {
+          width: calc(32% - 10px);
+        }
+		{% elsif nav_range == 4 %}
+        .dawn-product-slider .carousel-cell {
+          width: calc(24% - 10px);
+         }
+		{% endif %}
+    }
+    .flickity-page-dots .dot {
+    	background: {{ section.settings.navigation_color }};
+    }
+    .flickity-button-icon {
+    	color: {{ section.settings.navigation_color }};
+    }
+{% endstyle %}
+{% schema %}
+{
+  "name": "Products slider",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+	{
+      "type": "text",
+      "id": "title",
+      "default": "Featured Products slider",
+      "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+    {
+      "type": "range",
+      "id": "navigation_amount",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "Change the number of cards in view"
+    },
+    {
+      "type": "color",
+      "id": "navigation_color",
+      "label": "Arrow color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "navigation_bg_color",
+      "label": "Arrow background",
+      "default": "#242833"
+    },
+    {
+      "type": "checkbox",
+      "id": "viewall",
+      "label": "View All"
+    },
+    {
+      "type": "color",
+      "id": "viewall_color",
+      "label": "View All Text Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "viewall_bg_color",
+      "label": "View All Background",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products collection slider",
+      "category":"Custom"
+    }
+  ]
+}
+{% endschema %}
+<script>
+   var elem = document.querySelector('.dawn-product-slider .carousel');
+   var flkty = new Flickity( elem, {
+     contain: true,
+     imagesLoaded: true,
+     lazyLoad: 2,
+     wrapAround: true,
+     pageDots: false,
+   });
+   {% if request.design_mode %}
+   document.addEventListener("shopify:section:load", function(event) {
+     var elem = document.querySelector('.dawn-product-slider .carousel');
+     var flkty = new Flickity( elem, {
+       contain: true,
+       imagesLoaded: true,
+       lazyLoad: 2,
+       wrapAround: true,
+       pageDots: false,
+     });
+   });
+   {% endif %}
+</script>
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 

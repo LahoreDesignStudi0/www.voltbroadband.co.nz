@@ -1,0 +1,342 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- unless settings.cart_type == 'drawer' -%}
+  <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+<script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+
+<cart-items class="gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
+  <div class="page-width">
+    <!-- Title -->
+    <div class="title-wrapper-with-link" style="margin-top: 30px;display: block;">
+      <h1 class="title title--primary" style="margin-bottom: 10px;">{{ 'sections.cart.title' | t }}</h1>
+      <p class="cart_subheading">Please check your order below before you checkout</p>
+    </div>
+
+    <div class="cart__warnings">
+      <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
+      <a href="{{ routes.root_url }}" class="button">
+        {{ 'general.continue_shopping' | t }}
+      </a>
+
+      {%- if shop.customer_accounts_enabled and customer == null -%}
+        <h2 class="cart__login-title">{{ 'sections.cart.login.title' | t }}</h2>
+        <p class="cart__login-paragraph">
+          {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+        </p>
+      {%- endif -%}
+    </div>
+
+    {% assign recurring_total_price = 0 %}
+      <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+        <div class="custom-summary">
+          <div id="cart_page">
+            <!-- Cart Items -->
+            <div class="cart_left">
+              <div class="cart_items cart__items" id="main-cart-items" data-id="{{ section.id }}">
+                {% if cart != empty %}
+                  {% for item in cart.items %}
+                    {% assign recurring_price = 0 %}
+                    {% if item.selling_plan_allocation and item.selling_plan_allocation.price_adjustments.size > 1 %}
+                      {% assign recurring_price = item.selling_plan_allocation.price_adjustments[1].price %}
+                      {% assign recurring_total_price = recurring_total_price | plus: item.selling_plan_allocation.price_adjustments[1].price %}
+                    {% else %}
+                      {% assign recurring_price = 0 %}
+                    {% endif %}
+
+                    {% if recurring_price != 0 %}
+                      <div class="cart_item cart-item" id="CartItem-{{ item.index | plus: 1 }}" data-title="{{ item.product.title }}">
+                        <div class="cart_item_wrap">
+                          <!-- Cart content -->
+                          <div class="cart_item_details">
+                            <div class="cart_box cart_product_details_box bordered_box">
+                              <!-- Product Title & Price -->
+                              <div class="cart_item_row cart_item_row_title text_red fw_bold">
+                                <h3 class="product_heading product_heading_title">
+                                  <a href="{{ item.url }}" class="cart-item__name h4 break">
+                                    {% if item.product.title == 'Installation' %}
+                                      {{ 'Deposit' }}
+                                    {% elsif item.product.title == 'Equipment for Fibre Resilience Pro' %}
+                                      {{ 'Equipment' }}
+                                    {% else %}
+                                      {{ item.product.title | escape }}
+                                    {% endif %}
+                                  </a>
+                                </h3>
+                                {% if recurring_price != 0 %}
+                                  <h3 class="product_heading product_heading_price" style="margin: 0;"><span>$</span>{{ recurring_price | divided_by: 100 }}</h3>
+                                {% else %}
+                                  <h3 class="product_heading product_heading_price" style="margin: 0;"><span>$</span>{{ item.product.price | divided_by: 100 }}</h3>
+                                {% endif %}
+                                <p class="billed_duration" style="font-weight: 100 !important;">Plan Payment ({{ item.product.metafields.custom.billed }})</p>
+                              </div>  
+                              <!-- Speed Details -->
+                              {% if item.product.title != 'Installation' and  item.product.title != 'Equipment for Fibre Resilience Pro'%}
+                                <div class="cart_item_row cart_item_row_speed_details">
+                                  <div class="cart_item_row_wrap">
+                                    
+
+                                    {% if recurring_price != 0 %}              
+                                      {% if item.product.metafields.custom.technology.value == 'VDSL' %}
+                                          <hgroup>
+                                            <h3 class="product_speed_title fw_bold text_uppercase m-0">VDSL</h3>
+                                            <p class="product_speed_details">Download | Upload - Up to <strong class="fw_bold">60 Mbps</strong></p>
+                                          </hgroup> 
+                                      {% else %}
+
+                                        <div class="features">
+                                          {% if item.product.metafields.custom.package_service_1 != blank %}
+                                            <div class="features_item">
+                                              {{ item.product.metafields.custom.package_service_1 }}
+                                            </div>
+                                          {% endif %}
+                                        </div>
+                                        <p class="with_instant_backup_text">With instant satellite backup</p>
+                                          {% comment %} <hgroup>
+                                            <h3 class="product_speed_title fw_bold m-0 text_red text_italic">Fibre</h3>
+                                            <p class="cartpage_upto_text faded_text text_italic">Up to</p>
+                                            <p class="product_speed_details m-0"><img src="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow-dark.png?v=1749931788" width="15px" height="15px" alt="Down Arroa Image" /> <strong class="fw_bold">900 Mbps</strong></p>
+                                            <p class="product_speed_details m-0"><img src="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow-dark.png?v=1749931788" width="15px" height="15px" alt="Down Arroa Image" /> <strong class="fw_bold">500 Mbps</strong></p>
+                                          </hgroup> {% endcomment %}
+                                          {% comment %} <hgroup>
+                                            <h3 class="product_speed_title fw_bold m-0 text_red text_italic">Satellite Broadband</h3>
+                                            <p class="cartpage_upto_text faded_text text_italic">Up to</p>
+                                            <p class="product_speed_details m-0"><img src="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow-dark.png?v=1749931788" width="15px" height="15px" alt="Down Arroa Image" /> <strong class="fw_bold">50 Mbps</strong></p>
+                                            <p class="product_speed_details m-0"><img src="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow-dark.png?v=1749931788" width="15px" height="15px" alt="Down Arroa Image" /> <strong class="fw_bold">10 Mbps</strong></p>
+                                          </hgroup> {% endcomment %}
+                                        {% endif %}
+                                    {% else %}
+                                      <p>Add-on</p>
+                                    {% endif %}
+                                  </div>
+                                </div>
+                              {% endif %}
+                            </div>
+                            {% if recurring_price != 0 %}
+                              <div style="text-align: right;">
+                                <cart-remove-button
+                                  id="Remove-{{ item.index | plus: 1 }}"
+                                  data-index="{{ item.index | plus: 1 }}"
+                                >
+                                  <a
+                                    href="{{ item.url_to_remove }}"
+                                    class="button button--tertiary"
+                                    aria-label="{{ 'sections.cart.remove_title' | t: title: item.title | escape }}"
+                                  >Remove</a>
+                                </cart-remove-button>
+                              </div>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                  <p style="text-align: center; padding: 20px; font-size: 16px;">Your cart is currently empty.</p>
+                {% endif %}
+              </div>
+              <!-- Preferred Install Date -->
+              <div class="bordered_box">
+                <div class="cart_item_row_lfc_and_preferred_install_date cart_row m-0">
+                  <div class="preferred_install_date cart_field_group">
+                    <p class="cart_label fw_bold text_red">Preferred Installation Date</p>
+                    <input id="cart_date" placeholder="Preferred Install Date" 
+                      name="attributes[Preferred Install Date]" 
+                      value="{{ cart.attributes['Preferred Install Date'] }}"
+                      class="cart_field" 
+                      type="text"
+                    >
+                  </div>
+                </div>
+
+                <!-- Order Note -->
+                {%- if settings.show_cart_note -%}
+                  <cart-note class="cart__note field">
+                    <p class="cart_label fw_bold text_red"><strong>Help us serve you better! Let us know if there’s anything else we should know.</strong></p>
+                    <textarea class="text-area field__input cart_field" name="note" id="Cart-note">{{ cart.note }}</textarea>
+                  </cart-note>
+                {%- endif -%}
+
+                <!-- Update cart button -->
+                <button id="updateCartBtn" type="submit" class="button button--primary" disabled>Update Cart</button>
+              </div>
+            </div>
+            <!-- Preferred Install Date -->
+            <!-- Cart sidebar (summary) -->
+            <section id="product_summary" class="cart_page_summary">
+              <div class="product_summary_wrap">
+                <div class="product_summary_header">
+                  <h2 class="">Summary</h2>
+                </div>
+                <!-- Start Row - Recurring Payment -->
+                <div class="product_summary_row summary_row_recurring">
+                  <h4 class="product_summary_row_heading">Monthly Recurring Payment</h4>
+                  <ul>
+                    {% for item in cart.items %}
+                      {% if item.selling_plan_allocation.price_adjustments[1].price %}
+                        <li class="product_summary_item">
+                          <h5 class="product_summary_item_name">{{ item.product.title | escape }}</h5>
+                          <h5 class="product_summary_item_price">$<span>{{ item.product.price | divided_by: 100 }}</span></h5>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                  <div class="product_summary_total_row product_summary_total_recurring">
+                    <h2>Total Recurring Monthly</h2>
+                    <strong>$<span>{{ recurring_total_price | divided_by: 100 }}</span></strong>
+                  </div>
+                </div>
+                <!-- End Row - Recurring Payment -->
+                
+                <!-- Start Row - One Time Payment -->
+                <div class="product_summary_row summary_row_one_time">
+                  <h4 class="product_summary_row_heading">One Time Payment</h4>
+                  <ul>
+                    {% for item in cart.items %}
+                      {% if item.selling_plan_allocation.price_adjustments[1].price == blank %}
+                        <li class="product_summary_item">
+                          <h5 class="product_summary_item_name">{{ item.product.title | escape }}</h5>
+                          <h5 class="product_summary_item_price">$<span>{{ item.product.price | divided_by: 100 }}</span></h5>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                  <div class="product_summary_total_row product_summary_total_one_time">
+                    <h2>Total One Time</h2>
+                    {% assign total_onetime_payment = 0 %}
+                    {% for item in cart.items %}
+                      {% if  item.selling_plan_allocation.price_adjustments[1].price == blank %}
+                        {% assign total_onetime_payment = total_onetime_payment | plus: item.product.price %}
+                      {% endif %}
+                    {% endfor %}
+                    <strong>$<span>{{ total_onetime_payment | divided_by: 100 }}</span></strong>
+                  </div>
+                </div>
+                <!-- End Row - One Time Payment -->
+                
+                <!-- Start Row - Summary Footer -->
+                <div class="product_summary_footer">
+                  <div class="product_summary_footer_wrap">
+                    <div class="psf_row_total_due_today">
+                      <hgroup>
+                        <span>Total Due Today <br /><small>Inclusive of GST</small></span>
+                        
+                        <h3>$<span>{{ cart.total_price | divided_by: 100 }}</span></h3>
+                      </hgroup>
+                    </div>
+                    <div class="psf_row_button_buynow">
+                      <!-- CHECKOUT BUTTON -->
+                      <div class="cartpage_footer_checkout_btn_area">
+                        <div class="cartpage_checkout_btn_wrap">
+                          <a href="/checkout" class="cartpage_checkout_btn button">
+                            {{ 'sections.cart.checkout' | t }}
+                          </a>
+                        </div>
+                        <p class="cart_footer_note_for_next_payment">Your next month payment will be <span class="fw_bold">$</span><span class="fw_bold">{{ recurring_total_price | divided_by: 100 }}</span></p>
+                      </div>
+                      <!-- /# CHECKOUT BUTTON -->
+                    </div>
+                  </div>
+                </div>
+                <!-- End Row - Summary Footer -->
+              </div>
+              <hgroup class="cart_footer_checkout_instructions cart_grey_box">
+                <p>The total price includes applicable taxes.</p>
+                <p>By proceeding to checkout, you confirm that you have read and agree to our <strong><a target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/KACIFIC_GENERAL_CONDITIONS_new.pdf?v=1740396654">General Conditions</a>, <a target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/ADDITIONAL_TERMS_FIBRE_NEW.pdf?v=1740396654" >Additional Fibre Terms</a>,</strong> and <strong><a target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/KNZ_Acceptable_Use_Policy_for_Volt_website_only_V2.pdf?v=1741609949">Acceptable Use Policy.</a></strong></p>
+                <p>We provide our Service to you on an “as is, when available basis”. Service levels are not applicable, and we have no liability to you if the applicable MIR is not met.</p>
+              </hgroup>
+              <hgroup class="cart_grey_box">
+                <p class="cart_notice_text m-0"><strong>Auto-Renewal Notice:</strong> On your next billing date, your plan subscription will automatically renew, and the same amount will be charged to your card.</p>
+              </hgroup>
+            </section>
+          </div>
+          
+          <!-- Preferred Install Date -->
+          {% comment %}
+          <div class="bordered_box">
+            <div class="cart_item_row_lfc_and_prefered_install_date cart_row m-0">
+              <div class="prefered_install_date cart_field_group">
+                <p class="cart_label fw_bold text_red">Preferred Installation Date</p>
+                <input id="cart_date" placeholder="Preferred Installation Date" name="attributes[Prefered Install Date]"  class="cart_field" type="text" onfocus="(this.type='date')" onblur="(this.value == '' ? this.type='text' : this.type='date')" value="{{ cart.attributes['Preferred Installation Date'] }}">
+              </div>
+            </div>
+            <!-- Order Note -->
+            {%- if settings.show_cart_note -%}
+              <cart-note class="cart__note field">
+                <p class="cart_label fw_bold text_red"><strong>Help us serve you better! Let us know if there’s anything else we should know.</strong></p>
+                <textarea class="text-area field__input cart_field" name="note" id="Cart-note">{{ cart.note }}</textarea>
+              </cart-note>
+            {%- endif -%}
+            <!-- Update cart button -->
+            <button type="submit" class="button button--primary">Update Cart</button>
+          </div>
+          {% endcomment %}
+        </div>
+      </form>
+  </div>
+</cart-items>
+
+
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-items.name",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
+
+
+
+
+

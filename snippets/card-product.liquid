@@ -1,0 +1,242 @@
+{% comment %}
+  Renders a product card
+
+  Accepts:
+  - card_product: {Object} Product Liquid object (optional)
+  - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+  - image_shape: {String} Image mask to apply to the product image card. Values are "arch", "blob", "chevronleft", "chevronright", "diamond", "parallelogram", and "round". (optional)
+  - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+  - show_vendor: {Boolean} Show the product vendor. Default: false
+  - show_rating: {Boolean} Show the product rating. Default: false
+  - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+  - skip_styles: {Boolean} Don't include component styles. Useful when rendering multiple product cards in a loop. Default: false (optional)
+  - quick_add: {Boolean} Show the quick add button.
+  - section_id: {String} The ID of the section that contains this card.
+  - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
+  - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
+  - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
+
+  Usage:
+  {% render 'card-product', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+{%- unless skip_styles -%}
+  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+  {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
+  {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
+{%- endunless -%}
+
+{%- if card_product and card_product != empty -%}
+  {%- liquid
+    assign ratio = 1
+    if card_product.featured_media and media_aspect_ratio == 'portrait'
+      assign ratio = 0.8
+    elsif card_product.featured_media and media_aspect_ratio == 'adapt'
+      assign ratio = card_product.featured_media.aspect_ratio
+    endif
+    if ratio == 0 or ratio == null
+      assign ratio = 1
+    endif
+  -%}
+  <div
+    data-id="{{ card_product.metafields.custom.zipcode }}"
+    class="card-wrapper product-card-wrapper underline-links-hover"
+  >
+
+    <div class="plans">
+      {%- assign plan_technology = card_product.metafields.custom.technology 
+        | strip
+        | strip_newlines
+        | replace: " ", ""
+        | downcase -%}
+      {%- assign plan_filter = card_product.metafields.custom.filter | strip | downcase -%}
+
+      <div class="plan" data-technology="{{ plan_technology }}" data-filter="{{ plan_filter }}">
+        <div class="plan_group_top">
+          <div class="plan_red_logo">
+            <img src="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/logo-red-colored.png?v=1738702623" alt="Logo Red" width="" height="" />
+          </div>
+          <h2 class="plan_title">{{ card_product.title | escape }}</h2>
+          <div class="price">
+            <h2 class="plan_price">${{ card_product.price | divided_by: 100 }}</h2>
+            <p>
+              <span>{{ card_product.metafields.custom.billed }}</span>
+              <span>{{ card_product.metafields.custom.contract }}</span>
+            </p>
+          </div>
+          <div class="product_desc">
+            {{ card_product.content }}
+          </div>
+        </div>
+        <div class="features">
+          {% if card_product.metafields.custom.package_service_1 != blank %}
+            <div class="features_item">
+              {{ card_product.metafields.custom.package_service_1 }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="features_collapsible">
+          {% if card_product.metafields.custom.satellite_backup %}
+            <div class="features_collapsible_item features_collapsible_item_first satellite_backup">
+              <button class="feature_item_collapser">
+                <div class="faq_question_text">
+                  <h4>Satellite Backup</h4>
+                </div>
+                <span class="faq-dropdown-symbol">+</span>
+              </button>
+              <div class="features_collapsible_item_content">
+                <p>{{ card_product.metafields.custom.satellite_backup }}</p>
+              </div>
+            </div>
+          {% endif %}
+          <div class="features_collapsible_item features_collapsible_item_second equipment">
+            <button class="feature_item_collapser">
+              <div class="faq_question_text">
+                {% assign upfront_charges = 999 %}
+                {% if card_product.title == 'Fibre Daily Go' %}
+                  <h4>Full deployment - Free</h4>
+                {% else %}
+                  <h4>Full deployment, equipment & activation of services <br /> ${{ upfront_charges }} Deposit (Upfront)</h4>
+                {% endif %}
+              </div>
+              <span class="faq-dropdown-symbol">+</span>
+            </button>
+            <div class="features_collapsible_item_content">
+              {% assign upfront_total = card_product.metafields.custom.upfront_one_time_install.value | plus: card_product.metafields.custom.upfront_equipment.value %}
+              {% assign upfront_total = upfront_total | minus: 999 %}
+              {{ card_product.metafields.custom.equipment_includes }}
+              {% if card_product.title != "Fibre Daily Go" %}
+                {%- if plan_technology == 'satellite' -%}
+                  <p class="plan_equipment_footer">The <strong>remaining balance</strong> of <span class="text_red">$<span>{{ upfront_total }}</span></span> will be invoiced and must be paid in full prior to the satellite installation.</p>
+                {%- else -%}
+                  <p class="plan_equipment_footer">The <strong>remaining balance</strong> of <span class="text_red">$<span>{{ upfront_total }}</span></span> will be invoiced upon successful completion of fibre installation and must be paid in full prior to the installation of your satellite backup system.</p>
+                {%- endif -%}
+              {% endif %}
+            </div>
+          </div>
+          <!-- Plan Addons -->
+          {% if card_product.metafields.custom.addon_1_image.value %}
+            <div class="features_collapsible_item addons_collapsible_item">
+              <button class="feature_item_collapser">
+                <div class="faq_question_text">
+                  <h4>Add-ons</h4>
+                </div>
+                <span class="faq-dropdown-symbol">+</span>
+              </button>
+              <div class="features_collapsible_item_content">
+                {% if card_product.metafields.custom.addon_1_image.value %}
+                  <div class="fcic_addon">
+                    <img src="{{ card_product.metafields.custom.addon_1_image.value | img_url: '30x30' }}" width="30" height="30" alt="Addon Icon" />
+                    <p>{{ card_product.metafields.custom.addon_1_title }}</p>
+                  </div>
+                {% endif %}
+                
+                {% if card_product.metafields.custom.addon_2_image.value %}
+                  <div class="fcic_addon">
+                    <img src="{{ card_product.metafields.custom.addon_2_image.value | img_url: '30x30' }}" width="30" height="30" alt="Addon Icon" />
+                    <p>{{ card_product.metafields.custom.addon_2_title }}</p>
+                  </div>
+                {% endif %}
+                {% if card_product.metafields.custom.addon_3_image.value %}
+                  <div class="fcic_addon">
+                    <img src="{{ card_product.metafields.custom.addon_3_image.value | img_url: '30x30' }}" width="30" height="30" alt="Addon Icon" />
+                    <p>{{ card_product.metafields.custom.addon_3_title }}</p>
+                  </div>
+                {% endif %}
+
+                {% if card_product.metafields.custom.addon_4_image.value %}
+                  <div class="fcic_addon">
+                    <img src="{{ card_product.metafields.custom.addon_4_image.value | img_url: '30x30' }}" width="30" height="30" alt="Addon Icon" />
+                    <p>{{ card_product.metafields.custom.addon_4_title }}</p>
+                  </div>
+                {% endif %}
+
+                {% if card_product.metafields.custom.addon_5_image.value %}
+                  <div class="fcic_addon">
+                    <img src="{{ card_product.metafields.custom.addon_5_image.value | img_url: '30x30' }}" width="30" height="30" alt="Addon Icon" />
+                    <p>{{ card_product.metafields.custom.addon_5_title }}</p>
+                  </div>
+                {% endif %}
+
+              </div>
+            </div>
+          {% endif %}
+          <!-- /Plan Addons -->
+        </div>
+
+        {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
+        <div class="buy_now_section">
+
+        <product-form data-section-id="{{ section.id }}">
+          {%- form 'product',
+            card_product,
+            id: product_form_id,
+            class: 'form',
+            novalidate: 'novalidate',
+            data-type: 'add-to-cart-form'
+          -%}
+            <input
+              type="hidden"
+              name="id"
+              value="{{ card_product.selected_or_first_available_variant.id }}"
+              class="product-variant-id"
+              {% if card_product.selected_or_first_available_variant.available == false %}
+                disabled
+              {% endif %}
+              
+            >
+            <!-- Dev is testing... -->
+            <input type="hidden" name="selling_plan" value="{{ card_product.metafields.custom.selling_plan_id }}">
+            {% comment %} <button
+              id="{{ product_form_id }}-submit"
+              type="submit"
+              name="add"
+              class="checkoutButton direct-checkout-btn plan_buy_now_btn quick-add__submit"
+              aria-haspopup="dialog"
+              aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+              aria-live="polite"
+              data-sold-out-message="true"
+              style="display: none"
+              {% if card_product.selected_or_first_available_variant.available == false %}
+                disabled
+              {% endif %}
+            >
+              <span>
+                {%- if card_product.selected_or_first_available_variant.available -%}
+                  <!-- {{ 'products.product.add_to_cart' | t }} -->
+                  Buy Now
+                {%- else -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- endif -%}
+              </span>
+              <span class="sold-out-message hidden">
+                {{ 'products.product.sold_out' | t }}
+              </span>
+              {%- if horizontal_quick_add -%}
+                <span class="icon-wrap">
+                  {{- 'icon-plus.svg' | inline_asset_content -}}
+                </span>
+              {%- endif -%}
+              {%- render 'loading-spinner' -%}
+            </button> {% endcomment %}
+
+            {% if plan_technology == 'satellite' %}
+              <a class="plan_buy_now_btn satellite_buy_btn" href="{{ card_product.url }}">Buy Now</a>
+            {% else %}
+              <a class="plan_buy_now_btn" href="{{ card_product.url }}" style="display: none;">Buy Now</a>
+              <a class="planCheckAddressBtn" href="#shopify-section-template--17760546816047__custom_liquid_fGDpqr">Check Address</a>
+            {% endif %}
+          {%- endform -%}
+        </product-form>
+  
+        </div>
+        <div class="plan_footer">
+          <a class="terms" target="_blank" href="https://cdn.shopify.com/s/files/1/0654/8861/7519/files/KACIFIC_GENERAL_CONDITIONS_new.pdf?v=1740396654">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
