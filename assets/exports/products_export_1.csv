@@ -1,0 +1,306 @@
+Handle,Title,Body (HTML),Vendor,Product Category,Type,Tags,Published,Option1 Name,Option1 Value,Option1 Linked To,Option2 Name,Option2 Value,Option2 Linked To,Option3 Name,Option3 Value,Option3 Linked To,Variant SKU,Variant Grams,Variant Inventory Tracker,Variant Inventory Qty,Variant Inventory Policy,Variant Fulfillment Service,Variant Price,Variant Compare At Price,Variant Requires Shipping,Variant Taxable,Unit Price Total Measure,Unit Price Total Measure Unit,Unit Price Base Measure,Unit Price Base Measure Unit,Variant Barcode,Image Src,Image Position,Image Alt Text,Gift Card,SEO Title,SEO Description,Google Shopping / Google Product Category,Google Shopping / Gender,Google Shopping / Age Group,Google Shopping / MPN,Google Shopping / Condition,Google Shopping / Custom Product,Google Shopping / Custom Label 0,Google Shopping / Custom Label 1,Google Shopping / Custom Label 2,Google Shopping / Custom Label 3,Google Shopping / Custom Label 4,Checkout Blocks Rule Trigger (product.metafields.checkoutblocks.trigger),Addons (product.metafields.custom.addons),Addon 1 Title (product.metafields.custom.addon_1_title),Addon 2 Title (product.metafields.custom.addon_2_title),Addon 3 Title (product.metafields.custom.addon_3_title),Addon 4 Title (product.metafields.custom.addon_4_title),Addon 5 Title (product.metafields.custom.addon_5_title),Billed (product.metafields.custom.billed),Contract (product.metafields.custom.contract),Equipment Includes (product.metafields.custom.equipment_includes),Filter (product.metafields.custom.filter),Included Equipments Price (product.metafields.custom.included_equipments_price),Included Item 1 Title (product.metafields.custom.included_item_1_title),Included Item 2 Title (product.metafields.custom.included_item_2_title),Included Item 3 Title (product.metafields.custom.included_item_3_title),Included Item 4 Title (product.metafields.custom.included_item_4_title),Included Item 5 Title (product.metafields.custom.included_item_5_title),Instant Satellite Backup (product.metafields.custom.instant_satellite_backup),One Time Install Includes (product.metafields.custom.one_time_install_includes),Package Service 1 (product.metafields.custom.package_service_1),Satellite Backup (product.metafields.custom.satellite_backup),Selling Plan ID (product.metafields.custom.selling_plan_id),Technology (product.metafields.custom.technology),Upfront - Equipment (product.metafields.custom.upfront_equipment),Upfront - One Time Install (product.metafields.custom.upfront_one_time_install),Google: Custom Product (product.metafields.mm-google-shopping.custom_product),EasyFlow Product options (product.metafields.product_options.options),SEO Hidden (product.metafields.seo.hidden),Battery type (product.metafields.shopify.battery-type),Color (product.metafields.shopify.color-pattern),Connection type (product.metafields.shopify.connection-type),Data network (product.metafields.shopify.data-network),Portability (product.metafields.shopify.portability),Power source (product.metafields.shopify.power-source),Subscription type (product.metafields.shopify.subscription-type),Wi-Fi band (product.metafields.shopify.wi-fi-band),Wi-Fi standard (product.metafields.shopify.wi-fi-standard),Variant Image,Variant Weight Unit,Variant Tax Code,Cost per item,Included / New Zealand,Price / New Zealand,Compare At Price / New Zealand,Included / International,Price / International,Compare At Price / International,Included / Singapore,Price / Singapore,Compare At Price / Singapore,Status
+installation-for-satellite,Installation for Satellite,"<p><strong>Installation includes:</strong></p>
+<ul>
+<li>Satellite kit installation (within 100 km of Volt’s warehouse)<br>
+</li>
+<li> Performed by a technician</li>
+<li>Additional charges may apply beyond range</li>
+</ul>
+<div style=""display: none;"" class=""installation_red_box"">
+<h2>A deposit of $999 is collected when you choose installation. <br>(Upfront payment and non-refundable)</h2>
+<p>The <strong>remaining balance</strong> of <strong>$2439</strong> will be invoiced upon successful completion of the fibre installation and must be paid in full prior to the installation of your satellite backup system.</p>
+</div>",Volt Broadband New Zealand,Services > Professional Services,"","",true,Title,Default Title,,,,,,,,,0.0,shopify,100,continue,manual,999.00,,false,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/instalation-red.png?v=1754070165,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+max-plan,Max Plan,"<p>Best for up to 7 users</p>
+<p> </p>
+<p>Unlimited Data(First Priority Data Quota - 410GB)</p>",My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,max-plan,0.0,shopify,91,deny,manual,159.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Fibre_Resilience_Pro.png?v=1749185818,1,"",false,,,,,,,,,,,,,,,,Power Stations,Solar Panels,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Satellite Kit (75cm antenna, MDM 2510, TRX 0120 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Satellite kit installation (within 100 km of Volt’s warehouse)</li>
+     <li> Performed by a technician</li>
+     <li>Additional charges may apply beyond range</li>
+</ul>",Satellite,2349,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",,,,,,,"            <h3 class=""features_item_name"">Satellite</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">120</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">20</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+          </div>
+            </div>
+<h3 class=""instant_backup_line"">Unlimited Data (First Priority Data Quota - 410GB)</h3>",,,Satellite,'2615,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,red,,,,,one-time-installation-feee,,,,kg,,,true,,,true,,,true,,,active
+pro-plan,Pro Plan,"<p>Best for up to 5 users</p>
+<p> </p>
+<p>Unlimited Data(First Priority Data Quota - 315GB)</p>",My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,pro-plan,0.0,shopify,91,deny,manual,129.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Fibre_Resilience_Pro.png?v=1749185818,1,"",false,,,,,,,,,,,,,,,,Power Stations,Solar Panels,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Satellite kit installation (within 100 km of Volt’s warehouse)</li>
+     <li> Performed by a technician</li>
+     <li>Additional charges may apply beyond range</li>
+</ul>",Satellite,2349,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",,,,,,,"            <h3 class=""features_item_name"">Satellite</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">110</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">20</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+          </div>
+            </div>
+<h3 class=""instant_backup_line"">Unlimited Data (First Priority Data Quota - 315GB)</h3>",,,Satellite,'1630,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,red,,,,,one-time-installation-feee,,,,kg,,,true,,,true,,,true,,,active
+lite-plan,Lite Plan,"<p>Best for up to 4 users</p>
+<p> </p>
+<p>Unlimited Data(First Priority Data Quota - 220GB)</p>",My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,Light Plan,0.0,shopify,91,deny,manual,100.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Fibre_Resilience_Pro.png?v=1749185818,1,"",false,,,,,,,,,,,,,,,,Power Stations,Solar Panels,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Satellite kit installation (within 100 km of Volt’s warehouse)</li>
+     <li> Performed by a technician</li>
+     <li>Additional charges may apply beyond range</li>
+</ul>",Satellite,2349,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",,,,,,,"            <h3 class=""features_item_name"">Satellite</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">110</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">20</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+          </div>
+            </div>
+<h3 class=""instant_backup_line"">Unlimited Data (First Priority Data Quota - 220GB)</h3>",,,Satellite,'1630,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,red,,,,,one-time-installation-feee,,,,kg,,,true,,,true,,,true,,,active
+equipment-for-vdsl-resilience,Equipment for VDSL Resilience,"",Volt Broadband New Zealand,Electronics > Networking > Bridges & Routers > Wireless Access Points,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,99,continue,manual,2649.00,,false,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/equipment-icon_4x_4ed05b50-a7c2-471c-939c-7ba00f773f01.png?v=1755635720,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+equipment,Equipment,"",Volt Broadband New Zealand,Product Add-Ons > Product Upgrades,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,continue,manual,2349.00,,true,false,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/equipment-icon_4x_4ed05b50-a7c2-471c-939c-7ba00f773f01.png?v=1755635720,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+solar-panel-110w,Solar Panel 110W,"<p style=""language: en-US; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; vertical-align: bottom; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging;""><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">PowerGuard</span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;""> Power Station Foldable Solar Panel 110W</span></p>",Volt Broadband New Zealand,Hardware > Power & Electrical Supplies > Solar Panels,"","",true,Title,Default Title,,,,,,,,"",100.0,shopify,100,deny,manual,402.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/SolarPanelVolt_065c9a88-8c71-40a0-97a4-a47b9fe828f1.png?v=1749678981,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,black,,,,,,,,,kg,,,true,,,true,,,true,,,active
+power-station-600w,Power Station 600W,"<p style=""language: en-US; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; vertical-align: bottom; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging;""><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">PowerGuard</span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;""> </span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">Power Station 600W</span></p>",Volt Broadband New Zealand,Electronics > Electronics Accessories > Power > Power Stations,"","",true,Title,Default Title,,,,,,,,"",0.0,shopify,100,deny,manual,804.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/PGPS600.png?v=1749678897,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,black,,,stationary,ac-powered,,,,,kg,,,true,,,true,,,true,,,active
+solar-panel-420w,Solar Panel 420W,"<p style=""language: en-US; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; vertical-align: bottom; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging;""><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">PowerGuard</span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;""> Power Station Foldable Solar Panel 420W</span></p>",Volt Broadband New Zealand,Hardware > Power & Electrical Supplies > Solar Panels,"","",true,Title,Default Title,,,,,,,,"",2000.0,shopify,100,continue,manual,1154.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Solar-Panel-Volt_7529250b-8979-4412-9a04-f52119efbd34.png?v=1749677303,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,black,,,,,,,,,kg,,,true,,,true,,,true,,,active
+solar-panel-220w,Solar Panel 220W,"<p style=""language: en-US; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; vertical-align: bottom; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging;""><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">PowerGuard</span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;""> Power Station Foldable Solar Panel 220W</span></p>",Volt Broadband New Zealand,Hardware > Power & Electrical Supplies > Solar Panels,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,continue,manual,683.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Solar-Panel-Volt_c83867b6-b5e5-4acb-b815-fc6b8880785b.png?v=1749676967,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+power-station-pro-3000w,Power Station Pro 3000W,"<p style=""language: en-US; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; vertical-align: bottom; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging;""><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">PowerGuard</span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;""> Power Station Pro 3000W</span></p>",Volt Broadband New Zealand,Electronics > Electronics Accessories > Power > Power Stations,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,continue,manual,2694.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/3000W.png?v=1749674922,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,black,,,stationary,ac-powered,,,,,kg,,,true,,,true,,,true,,,active
+power-station-pro,Power Station Pro,"<p style=""language: en-US; margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; vertical-align: bottom; mso-line-break-override: none; word-break: normal; punctuation-wrap: hanging;""><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;"">PowerGuard</span><span style=""font-size: 16.0pt; font-family: Aptos; mso-ascii-font-family: Aptos; mso-fareast-font-family: +mn-ea; mso-bidi-font-family: +mn-cs; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-bidi-theme-font: minor-bidi; color: black; mso-color-index: 13; mso-font-kerning: 12.0pt; language: en-US; mso-style-textfill-type: solid; mso-style-textfill-fill-themecolor: dark1; mso-style-textfill-fill-color: black; mso-style-textfill-fill-alpha: 100.0%;""> Power Station Pro Expansion Pack 2560Wh</span></p>",Volt Broadband New Zealand,Electronics > Electronics Accessories > Power > Power Stations,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,continue,manual,1693.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/2500W.png?v=1749674566,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,rechargeable,black,,,stationary,rechargeable,,,,,kg,,,true,,,true,,,true,,,active
+service-pack,Service Pack,,Volt Broadband New Zealand,,"","",false,Title,Default Title,,,,,,,,,0.0,shopify,100,deny,manual,72.00,,true,true,,,,,,,,,false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,archived
+installation,Installation,"<p><strong>Installation includes:</strong></p>
+<ul>
+<li>Fibre and Satellite installations will be carried out in two separate sessions.</li>
+<li>This pricing includes fibre installation (up to 200 metres) and satellite kit installation (within 100 km of Volt’s warehouse), performed by a technician.</li>
+<li>Additional charges may apply for extended Fibre/Satellite runs or locations beyond the range.</li>
+<li>The fee charged covers a one-time installation only; any future installations will incur additional charges.<br>
+</li>
+</ul>
+<div style=""display: none;"" class=""installation_red_box"">
+<h2>A deposit of $999 is collected when you choose installation. <br>(Upfront payment and non-refundable)</h2>
+<p>The <strong>remaining balance</strong> of <strong>$2439</strong> will be invoiced upon successful completion of the fibre installation and must be paid in full prior to the installation of your satellite backup system.</p>
+</div>",Volt Broadband New Zealand,Services > Professional Services,"","",true,Title,Default Title,,,,,,,,"",0.0,shopify,100,continue,manual,999.00,,false,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/instalation-red.png?v=1754070165,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+cyber-security-package,Cyber Security Package,"",Volt Broadband New Zealand,Services > Personal Services,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,deny,manual,22.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/cybersecurity-package.png?v=1744319687,1,"",false,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'1838940207,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+newtech-mdm-2510,NewTech MDM 2510,"",Volt Broadband New Zealand,Electronics > Computers,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,deny,manual,85.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/newtech-mdm.png?v=1744319570,1,"",false,,,278,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+wifi-router,Wifi Router,<p>Grandstream GWN 7052 Wireless</p>,Volt Broadband New Zealand,Electronics > Networking > Bridges & Routers > Wireless Routers,"","",true,Title,Default Title,,,,,,,,"",1000.0,shopify,100,deny,manual,120.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/fiber-router_0e159a10-6190-4427-ac29-89db04a33a25.png?v=1744319121,1,"",false,,,5497,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,white,wi-fi,,,,,dual-band-2-4-ghz-5-ghz,802-11b; 802-11g; 802-11n,,kg,,,true,,,true,,,true,,,active
+fibre-resilience-power-test,Fibre Resilience Pro (Test),"<p>Hyper-fast fibre with satellite backup for total peace of mind. Perfect for 4K ultra-high-definition streaming, gaming, remote work, or online learning. <strong>Unlimited data on both fibre &amp; satellite plans. </strong><br></p>",Volt Broadband New Zealand,Electronics > Communications > Telephony > Mobile & Smart Phone Accessories,"","",true,Title,Default Title,,,,,,,,Fibre Resilience Power-test,0.0,,100,continue,manual,189.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Small_logo_volt.png?v=1739462611,1,"",false,,,264,,,,,,,,,,,,,,,,,,Monthly, No Contract,"<ul>
+     <li>Fibre and Satellite installations will be carried out in two sessions.</li>
+     <li>Wifi Router</li>
+     <li>Dual Wan Modem</li>
+     <li>Satellite Kit</li>
+</ul>",,2439,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",,Dual WAN Router,,,,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Wifi Router</li>
+     <li>Dual-Wan Modem</li>
+     <li>Satellite Kit</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Fibre and Satellite installations will be carried out in two separate sessions.</li>
+     <li>This pricing includes fibre installation (up to 200 metres) and satellite kit installation (within 100 km of Volt’s warehouse), performed by a technician.</li>
+     <li> Additional charges may apply for extended fibre/Satellite runs or locations beyond the range.</li>
+</ul>","            <h3 class=""features_item_name"">Fibre</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">950</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">500</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+          </div>
+            </div>
+<h3 class=""instant_backup_line"">With instant satellite backup</h3>",Get speeds of up to 110 Mbps download and 10 Mbps upload,'1819410479,Fibre,'2349,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,red,,,,,,,,,kg,,,true,,,true,,,true,,,active
+fibre-daily-go,Fibre Daily Go,"<p>Hyper-fast fibre with <strong>unlimited data</strong> — always ready for 4K ultra-HD streaming, seamless gaming, remote work, and online learning.</p>",My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,Fibre Daily Go,0.0,,-16,deny,manual,99.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/5._Fibre_Daily_Go.png?v=1739961158,1,"",false,,,,,,,,,,,,,,,,,,,,,Per Month, No Contract,"<ul>
+     <li>Nil</li>
+</ul>",Fibre,,,,,,,,"<ul>
+     <li>Fibre Installation – Covers up to 200 meters of fibre setup.</li>
+</ul>","            <h3 class=""features_item_name"">Fibre</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">950</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">500</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+</div>
+            </div>",,'1664352303,Fibre,'0,'0,,app--56626511873--product-option-3a0hplqe,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+vdsl-resillience,VDSL Resillience,<p>VDSL with instant satellite backup ensures seamless connectivity where fibre isn’t available. Ideal for small to medium households who require daily streaming and work-from-home online tasks. <strong></strong><strong>Unlimited data on both VDSL &amp; satellite plans. </strong></p>,My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",false,Title,Default Title,,,,,,,,VDSL Resillience,0.0,,-8,deny,manual,159.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/4._VDSL_Resillience.png?v=1739961158,1,"",false,,,,,,,,,,,,,,,,,,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Wifi Router</li>
+     <li>Dual-Wan Modem</li>
+     <li>Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>VDSL and Satellite installations will be carried out in two separate sessions.</li>
+     <li>This pricing includes VDSL installation and satellite kit installation (within 100 km of Volt’s warehouse), performed by a technician.</li>
+     <li> Additional charges may apply for extended Fibre/VDSL/Satellite runs or locations beyond the range.</li>
+</ul>",,,,,,,,,,"            <h3 class=""features_item_name"">VDSL</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+               <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">60</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+</div>
+            </div>
+<h3 class=""instant_backup_line"">With instant satellite backup</h3>",Get speeds of up to 110 Mbps download and 10 Mbps upload,'1664319535,VDSL,'2349,'1299,,"",,,,,,,,,,,,kg,,,true,,,true,,,true,,,draft
+fibre-resilience-standard,Fibre Resilience Standard,"<p>Fast fibre with instant satellite backup ensures seamless connectivity in remote areas. Ideal for high-definition streaming, remote work, online learning, and business continuity. <strong>Unlimited data on both fibre &amp; satellite plans.</strong></p>",My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,Fibre Resilience Standard,0.0,,0,deny,manual,169.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/3._Fibre_Resilience_Standard.png?v=1739961158,1,"",false,,,,,,,,,,,,,,,,Power Stations,Solar Panels,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Wifi Router</li>
+     <li>Dual-Wan Modem</li>
+     <li>Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Fibre and Satellite installations will be carried out in two separate sessions.</li>
+     <li>This pricing includes fibre installation (up to 200 metres) and satellite kit installation (within 100 km of Volt’s warehouse), performed by a technician.</li>
+     <li> Additional charges may apply for extended Fibre/Satellite runs or locations beyond the range.</li>
+</ul>",FibreSat,2349,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",Dual WAN Router,,,,,,"            <h3 class=""features_item_name"">Fibre</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">300</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">100</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+</div>
+            </div>
+<h3 class=""instant_backup_line"">With instant satellite backup</h3>",Get speeds of up to 110 Mbps download and 10 Mbps upload,'1664286767,Fibre,'2349,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+fibre-resilience-premium-business,Fibre Resilience Premium (Business),<p>Hyper fast fibre with satellite backup for uninterrupted connectivity. Ideal for keeping your business online when it matters most. <strong>Comes with priority restoration</strong> in the event of a fibre interruption. <strong>Unlimited data on both fibre &amp; satellite plans. </strong></p>,My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,Fibre Resilience Pro (Business),0.0,,-1,deny,manual,309.00,,true,true,,,,,,https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Fibre_Resilience_Premium.png?v=1749185885,1,"",false,,,,,,,,,,,,,,,,Power Stations,Solar Panels,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Wifi Router</li>
+     <li>Dual-Wan Modem</li>
+     <li>Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Fibre and Satellite installations will be carried out in two separate sessions.</li>
+     <li>This pricing includes fibre installation (up to 200 metres) and satellite kit installation (within 100 km of Volt’s warehouse), performed by a technician.</li>
+     <li> Additional charges may apply for extended Fibre/Satellite runs or locations beyond the range.</li>
+</ul>",FibreSat,2349,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",Dual WAN Router,,,,,,"            <h3 class=""features_item_name"">Fibre</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">950</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">500</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+</div>
+            </div>
+<h3 class=""instant_backup_line"">With instant satellite backup</h3>",Get speeds of up to 110 Mbps download and 10 Mbps upload,'1664221231,Fibre,'2349,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,,,,,,,,,,kg,,,true,,,true,,,true,,,active
+fibre-resilience-pro,Fibre Resilience Pro,"<p>Hyper-fast fibre with satellite backup for total peace of mind. Perfect for 4K ultra-high-definition streaming, gaming, remote work, or online learning. <strong>Unlimited data on both fibre &amp; satellite plans. </strong><br></p>",My Store,Electronics > Communications > Telephony > Mobile & Smart Phones,"","",true,Title,Default Title,,,,,,,,Fibre Resilience Pro 1,0.0,shopify,91,deny,manual,189.00,,true,true,,,,,"",https://cdn.shopify.com/s/files/1/0654/8861/7519/files/Fibre_Resilience_Pro.png?v=1749185818,1,"",false,,,,,,,,,,,,,,,,Power Stations,Solar Panels,,,,Per Month, No Contract,"<p><strong>Includes Equipment</strong></p>
+<ul>
+     <li>Wifi Router</li>
+     <li>Dual-Wan Modem</li>
+     <li>Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)</li>
+</ul>
+
+<p><strong>Includes Installation</strong></p>
+<ul>
+     <li>Fibre and Satellite installations will be carried out in two separate sessions.</li>
+     <li>This pricing includes fibre installation (up to 200 metres) and satellite kit installation (within 100 km of Volt’s warehouse), performed by a technician.</li>
+     <li> Additional charges may apply for extended Fibre/Satellite runs or locations beyond the range.</li>
+</ul>",FibreSat,111,"Satellite Kit (75cm antenna, MDM 2010, ILB 3210 Transceiver, RF Cable)",Dual WAN Router,,,,,,"            <h3 class=""features_item_name"">Fibre</h3>
+            <div>
+              <span class=""fade_text"">Up to</span>
+               <div class=""feature_item_headings_speeds"">
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/download-arrow.png?v=1738707713"" />
+                <strong>
+                  <span class=""speed-value"">950</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+              <h3 class=""features_item_heading"">
+                <img class=""speed-arrow"" src=""https://cdn.shopify.com/s/files/1/0654/8861/7519/files/upload-arrow.png?v=1738707714"" />
+                <strong>
+                  <span class=""speed-value"">500</span> <span class=""speed-unit"">Mbps</span>
+                </strong>
+              </h3>
+          </div>
+            </div>
+<h3 class=""instant_backup_line"">With instant satellite backup</h3>",Get speeds of up to 110 Mbps download and 10 Mbps upload,'1819410479,Fibre,'2439,'999,,app--56626511873--product-option-bzj9lq9w; app--56626511873--product-option-7o9av1um; app--56626511873--product-option-iojkksdb,,,red,,,,,one-time-installation-feee,,,,kg,,,true,,,true,,,true,,,active
