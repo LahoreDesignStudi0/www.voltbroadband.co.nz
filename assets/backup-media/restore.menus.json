@@ -1,0 +1,80 @@
+{
+    "schema_version": 1,
+    "generated_at": "2026-04-22T17:09:40+00:00",
+    "menus": [
+        {
+            "id": "gid://shopify/Menu/212620705839",
+            "handle": "main-menu",
+            "title": "Main menu",
+            "items": [
+                {
+                    "id": "gid://shopify/MenuItem/520798699567",
+                    "title": "Login",
+                    "type": "CUSTOMER_ACCOUNT_PAGE",
+                    "url": "https://account.voltbroadband.co.nz/profile",
+                    "tags": [],
+                    "resource_id": "gid://shopify/CustomerAccountPage/76325453871",
+                    "resource": null,
+                    "items": []
+                },
+                {
+                    "id": "gid://shopify/MenuItem/541246717999",
+                    "title": "Contact",
+                    "type": "PAGE",
+                    "url": "/pages/contact",
+                    "tags": [],
+                    "resource_id": "gid://shopify/Page/102439518255",
+                    "resource": {
+                        "type": "Page",
+                        "handle": "contact"
+                    },
+                    "items": []
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Menu/212620738607",
+            "handle": "footer",
+            "title": "Footer menu",
+            "items": [
+                {
+                    "id": "gid://shopify/MenuItem/519142408239",
+                    "title": "Search",
+                    "type": "SEARCH",
+                    "url": "/search",
+                    "tags": [],
+                    "resource_id": "",
+                    "resource": null,
+                    "items": []
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Menu/212620771375",
+            "handle": "customer-account-main-menu",
+            "title": "Customer account main menu",
+            "items": [
+                {
+                    "id": "gid://shopify/MenuItem/519142473775",
+                    "title": "Orders",
+                    "type": "CUSTOMER_ACCOUNT_PAGE",
+                    "url": "https://account.voltbroadband.co.nz/orders",
+                    "tags": [],
+                    "resource_id": "gid://shopify/CustomerAccountPage/76325421103",
+                    "resource": null,
+                    "items": []
+                },
+                {
+                    "id": "gid://shopify/MenuItem/587272421423",
+                    "title": "Profile",
+                    "type": "CUSTOMER_ACCOUNT_PAGE",
+                    "url": "https://account.voltbroadband.co.nz/profile",
+                    "tags": [],
+                    "resource_id": "gid://shopify/CustomerAccountPage/76325453871",
+                    "resource": null,
+                    "items": []
+                }
+            ]
+        }
+    ]
+}

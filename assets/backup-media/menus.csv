@@ -1,0 +1,6 @@
+menu_handle,menu_title,item_path,item_depth,item_title,item_type,item_url,resource_handle,resource_parent_handle,tags
+main-menu,"Main menu",1,1,Login,CUSTOMER_ACCOUNT_PAGE,https://account.voltbroadband.co.nz/profile,,,
+main-menu,"Main menu",2,1,Contact,PAGE,/pages/contact,contact,,
+footer,"Footer menu",1,1,Search,SEARCH,/search,,,
+customer-account-main-menu,"Customer account main menu",1,1,Orders,CUSTOMER_ACCOUNT_PAGE,https://account.voltbroadband.co.nz/orders,,,
+customer-account-main-menu,"Customer account main menu",2,1,Profile,CUSTOMER_ACCOUNT_PAGE,https://account.voltbroadband.co.nz/profile,,,

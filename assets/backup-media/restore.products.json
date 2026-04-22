@@ -1,0 +1,489 @@
+{
+    "schema_version": 1,
+    "generated_at": "2026-04-22T17:08:25+00:00",
+    "products": [
+        {
+            "id": "gid://shopify/Product/7931075723311",
+            "handle": "fibre-resilience-pro",
+            "title": "Fibre Resilience Pro",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7931097055279",
+            "handle": "fibre-resilience-premium-business",
+            "title": "Fibre Resilience Premium (Business)",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7931105214511",
+            "handle": "fibre-resilience-standard",
+            "title": "Fibre Resilience Standard",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7931122057263",
+            "handle": "vdsl-resillience",
+            "title": "VDSL Resillience",
+            "publications": []
+        },
+        {
+            "id": "gid://shopify/Product/7931128414255",
+            "handle": "fibre-daily-go",
+            "title": "Fibre Daily Go",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7956164378671",
+            "handle": "fibre-resilience-power-test",
+            "title": "Fibre Resilience Pro (Test)",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7957753167919",
+            "handle": "wifi-router",
+            "title": "Wifi Router",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7957754085423",
+            "handle": "newtech-mdm-2510",
+            "title": "NewTech MDM 2510",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7957754576943",
+            "handle": "cyber-security-package",
+            "title": "Cyber Security Package",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7957758771247",
+            "handle": "installation",
+            "title": "Installation",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7962302021679",
+            "handle": "service-pack",
+            "title": "Service Pack",
+            "publications": []
+        },
+        {
+            "id": "gid://shopify/Product/7986046730287",
+            "handle": "power-station-pro",
+            "title": "Power Station Pro",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7986048139311",
+            "handle": "power-station-pro-3000w",
+            "title": "Power Station Pro 3000W",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7986052399151",
+            "handle": "solar-panel-220w",
+            "title": "Solar Panel 220W",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7986056265775",
+            "handle": "solar-panel-420w",
+            "title": "Solar Panel 420W",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7986058985519",
+            "handle": "power-station-600w",
+            "title": "Power Station 600W",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7986059116591",
+            "handle": "solar-panel-110w",
+            "title": "Solar Panel 110W",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7990748184623",
+            "handle": "equipment",
+            "title": "Equipment",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/7990750085167",
+            "handle": "equipment-for-vdsl-resilience",
+            "title": "Equipment for VDSL Resilience",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/8051037569071",
+            "handle": "lite-plan",
+            "title": "Lite Plan",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/8051042943023",
+            "handle": "pro-plan",
+            "title": "Pro Plan",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/8051043303471",
+            "handle": "max-plan",
+            "title": "Max Plan",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                }
+            ]
+        },
+        {
+            "id": "gid://shopify/Product/8055657431087",
+            "handle": "installation-for-satellite",
+            "title": "Installation for Satellite",
+            "publications": [
+                {
+                    "id": "gid://shopify/Publication/134615531567",
+                    "name": "Online Store"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615826479",
+                    "name": "Point of Sale"
+                },
+                {
+                    "id": "gid://shopify/Publication/134615859247",
+                    "name": "Shop"
+                },
+                {
+                    "id": "gid://shopify/Publication/144911826991",
+                    "name": "Google & YouTube"
+                },
+                {
+                    "id": "gid://shopify/Publication/144916086831",
+                    "name": "Facebook & Instagram"
+                }
+            ]
+        }
+    ]
+}

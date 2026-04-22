@@ -1,0 +1,45 @@
+{
+    "schema_version": 1,
+    "generated_at": "2026-04-22T17:09:39+00:00",
+    "blogs": [
+        {
+            "id": "gid://shopify/Blog/87982211119",
+            "handle": "news",
+            "title": "News",
+            "commentPolicy": "CLOSED",
+            "tags": [
+                "Test Tag"
+            ],
+            "templateSuffix": ""
+        }
+    ],
+    "articles": [
+        {
+            "id": "gid://shopify/Article/562688950319",
+            "blogId": "gid://shopify/Blog/87982211119",
+            "blogHandle": "news",
+            "blogTitle": "News",
+            "title": "My First Shopify Blog Post",
+            "handle": "my-first-shopify-blog-post",
+            "author": {
+                "name": "Kacific Broadband Satellites Group"
+            },
+            "body": "Some content will go here...",
+            "summary": "",
+            "tags": [
+                "Test Tag"
+            ],
+            "templateSuffix": "",
+            "isPublished": true,
+            "createdAt": "2025-01-07T18:34:14+00:00",
+            "updatedAt": "2025-01-07T18:34:15+00:00",
+            "publishedAt": "2025-01-07T18:34:14+00:00",
+            "image": {
+                "altText": "",
+                "url": "https://cdn.shopify.com/s/files/1/0654/8861/7519/articles/home-banner.png?v=1736274855",
+                "cdnUrl": "https://cdn.storedumper.com/s/files/1/0654/8861/7519/articles/home-banner.png",
+                "cdnExpiry": "2026-05-06T17:09:38+00:00"
+            }
+        }
+    ]
+}
